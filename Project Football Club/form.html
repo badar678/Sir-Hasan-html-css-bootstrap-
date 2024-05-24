@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+  <style>
+    body{
+      background: white;
+      font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+  
+    #submit{
+      margin-top: 7px;
+      color: black;
+      font-weight: bold;
+      padding: 4px;
+      background-color: yellow;
+      font-weight: bold;
+    }
+    #submit:hover{
+      background-color: red;
+      color: white;
+    }
+    #reset{
+      margin-top: 7px;
+      color: black;
+      font-weight: bold;
+      padding: 4px;
+      background-color: yellow;
+      font-weight: bold;
+    }
+    #reset:hover{
+      background-color: red;
+      color: white;}
+    h2{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin-bottom: 1px;
+      font-weight: bold;
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <ul>
+    <li><a href="football.html">Services</a></li>
+    <li><a class="active" href="form.html">Admission</a></li>
+    <li><a href="events.html">FC Events</a></li>
+    <li><a href="cv.html">Biography</a></li>
+    <li><a href="certificate.html">Certified Academy</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul> <br>
+  <img style="border-radius: 70px; float: right; margin-right: 45px; margin-top: 35px;" src="Aldenaire.png" height="130" width="130">
+<h1 style="text-decoration-line: underline; color: rgb(24, 16, 10); text-align: center;">Admission Form</h1>
+
+<form action="https://www.w3schools.com//action_page.php">
+  <label for="fname" style="font-weight: bold;">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter your name" required><br>
+  <label for="lname" style="font-weight: bold;">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required placeholder="Enter your name"><br>
+  <label for="Email" style="font-weight: bold;">Email:</label><br>
+  <input type="email" id="email" required placeholder="badar678@gmail.com"><br><br>
+  <label for="Gender" style="text-decoration-line: underline; font-weight: bold;">Gender:</label><br><i class="fa-solid fa-person"></i>
+  <input type="radio" name="Gender" id="vehicle1" required>
+  Male<br> <i class="fa-solid fa-person-dress"></i>
+  <input type="radio" name="Gender" id="vehicle2" required>
+  Female<br>
+ <br>
+  <label style="font-weight: bold; text-decoration-line: underline;" for="phone">Cell Phone:</label>
+  <input style="width: 125px;" name="Cell Phone" type="tel" id="phone" placeholder="0304-6782212" pattern="[0-9]{4}-[0-9]{7}" required><br>
+ <br>
+  <label style="font-weight: bold; text-decoration-line: underline;" for="cnic">CNIC:</label>
+  <input id="cnic" name="CNIC" placeholder="18343-6782212-4" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" required><br><br>
+  <label style="font-weight: bold; text-decoration-line: underline;" for="DOB">Date Of Birth:</label>
+  <input type="date" id="date" name="Date of Birth" min="2006-01-02" required><br><br>
+  <label style="font-weight: bold; text-decoration-line: underline;" for="myfile">Upload Picture:</label>
+  <input type="file" name="Upload Picture" required>
+
+  <p style="font-weight: bold; text-decoration-line: underline;">Address:</p>
+<textarea cols="28" rows="5" placeholder="Optional"></textarea>
+<p style="font-weight: bold; text-decoration-line: underline;">Country: <i class="fa-solid fa-earth-americas"></i></p>
+  <select name="Country" required>
+    <option value="">Select Your Country</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="England">England</option>
+    <option value="Australia">Australia</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="China">China</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="South Africa">South Africa</option>
+    <option value="Japan">Japan</option>
+  </select> 
+<br><br>
+  <input type="reset" value="Reset" id="reset"><br>
+  <input type="submit" id="submit" value="Register">
+</form>
+</body>
+</html>
